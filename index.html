@@ -57,7 +57,7 @@
         <div id="videoContainer" style="position: relative; width: 800px; height: 450px;"> <!--Credits to ChatGPT for this part-->
             <iframe
                 id="videoFrame"
-                src="docs/clstickmangtacity.html"
+                src=""
                 allowfullscreen
                 style="width: 100%; height: 100%; border: none;">
             </iframe>
@@ -69,7 +69,15 @@
         </div>
 
         <h1>Games</h1>
-
+        <button onclick="tenMinutesTillDawnGame()">10 Minutes Till Dawn</button>
+        <button onclick="onevonelolGame()">1v1.lol</button>
+        <button onclick="aDayInOfficeGame()">A Day in the Office</button>
+        <br>
+        <button onclick="smallWorldCupGame()">A Small World Cup</button>
+        <button onclick="basketRandomGame()">Basket Random</button>
+        <button onclick="cs16Game()">C.S. 1.6</button>
+        <br>
+        <button onclick="gtaGame()">Stickman GTA Vice City</button>
     </body>
 </html>
 
@@ -132,4 +140,26 @@
     document.addEventListener('fullscreenchange', () => {
       btn.textContent = document.fullscreenElement ? 'Exit Fullscreen' : '⛶ Fullscreen';
     });
+
+    function gtaGame(){
+        iframe.src = "docs/clstickmangtacity.html";
+    }
+    function cs16Game(){
+        iframe.src = "docs/clcs16.html";
+    }
+    function basketRandomGame(){
+        iframe.src = "docs/clbasketrandom.html";
+    }
+    function smallWorldCupGame(){
+        iframe.src = "docs/clasmallworldcup.html";
+    }
+    function aDayInOfficeGame(){
+        iframe.src = "docs/cladayintheoffice.html";
+    }
+    function onevonelolGame(){
+        iframe.src = "docs/cl1v1lol.html";
+    }
+    function tenMinutesTillDawnGame(){
+        iframe.src = "docs/cl10minutestilldawn.html";
+    }
 </script>
