@@ -69,6 +69,9 @@
         </div>
 
         <h1>Games</h1>
+        <button onclick="resetFrame()">Click to reset game frame</button>
+        <br>
+        <br>
         <button onclick="tenMinutesTillDawnGame()">10 Minutes Till Dawn</button>
         <button onclick="onevonelolGame()">1v1.lol</button>
         <button onclick="aDayInOfficeGame()">A Day in the Office</button>
@@ -161,5 +164,8 @@
     }
     function tenMinutesTillDawnGame(){
         iframe.src = "docs/cl10minutestildawn.html";
+    }
+    function resetFrame(){
+        iframe.src = "";
     }
 </script>
