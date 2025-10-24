@@ -2,7 +2,7 @@
 <html>
     <head>
         <title id="title">Game Website</title>
-        <script src="script.js"></script>
+        <!--<script src="script.js"></script>-->
         <link id="favicon" rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Media_Player_Windows_11_logo.svg/512px-Media_Player_Windows_11_logo.svg.png?20220323141659">
     </head>
     <body>
@@ -19,3 +19,35 @@
         </div>
     </body>
 </html>
+
+<script>
+    var changeTabNameButton = document.getElementById("changeTabNameButton");
+var changeTabNameBox = document.getElementById("changeTabNameBox").value;
+var changeTabIconButton = document.getElementById("changeTabIconButton");
+var changeTabIconBox = document.getElementById("changeTabIconBox").value;
+
+var cloakTools = document.getElementById("cloakTools");
+var showCloakButton = document.getElementById("showCloakToolsButton");
+var hideCloakButton = document.getElementById("hideCloakToolsButton");
+
+var titleElement = document.getElementById("title");
+var faviconElement = document.getElementById("favicon");
+
+showCloakButton.addEventListener("click", function() {
+    cloakTools.style.display = "block";
+});
+
+hideCloakButton.addEventListener("click", function() {
+    cloakTools.style.display = "none";
+});
+
+changeTabNameButton.addEventListener("click", function() {
+    var newTitle = document.getElementById("changeTabNameBox").value;
+    titleElement.textContent = newTitle;
+});
+
+changeTabIconButton.addEventListener("click", function() {
+    var newIconURL = document.getElementById("changeTabIconBox").value;
+    faviconElement.href = newIconURL;
+});
+</script>
